@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: rgb(214, 209, 202);
+}
+
+/* Navbar Design */ 
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+}   
+
+/* Navbar Design : Logo and Image */
+ #logo{
+    display: flex;
+    align-items: center;
+
+ } 
+
+ #logo img{
+    height: 65px;
+    border-radius: 50%;
+    margin: 3px 16px ;
+ }
+
+/* Navbar Design : List and Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-weight: 600;
+    /*margin: 0px 240px;*/
+  }
+
+  #navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.6;
+  
+  }
+ 
+  #navbar ul li{
+     list-style: none;
+     font-size: 1.2rem;
+  }
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+  
+/* Home Section */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 490px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home::before{
+    content: "";
+    background-image: url(images/spaghetti-1932466_1280\ \(2\).jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-rendering: optimizeQuality;
+    position :absolute;
+    top: 0;
+    left: 0;
+    height: 77%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.83;
+}
+
+.home h1{
+    color: white;
+    text-align: center;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+    text-align: center;
+}
+
+.home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Bree Serif", serif;
+}
+
+
+    #btn-button118 {
+        --bg-color: 
+    #191f36;
+        --snd-bg-color: 
+    #262b40;
+        --text-color: 
+    #fff;
+        --mian-color: 
+    #59b2f4;
+      }
+    
+      .btn{
+        font-family: "Baloo Bhaijaan 2", sans-serif;
+        font-weight: 700;
+        padding: 6px 25px;
+        border: 2px solid white;
+        background-color: #4c3a39;
+        color: #fff;
+        margin: 40px;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .btn:hover{
+        box-shadow: 7px 7px 20px 1px #a59e9e;
+      }
+
+      /*Services Section */
+
+      .services{
+        margin: 34px;
+        display: flex;
+        text-align: center;
+        font-family: "Bree Serif", serif;
+      }
+      
+      .h-secondary{
+        font-family: "Bree Serif", serif;
+        font-size: 2.3rem;
+      }
+
+      .services .box{
+        border: 2px solid brown;
+        padding: 35px;
+        border-radius: 28px;
+        margin: 3px 29px ;
+        background-color: rgb(224, 216, 216);
+        
+      }
+
+      .services .box img{
+        height: 160px;
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+      }
+
+      /*Client Section */
+
+      .client-section{
+        position: relative;
+      /* height: 350px;*/
+
+      }
+
+      .client-section::before{
+        content: "";
+        background-image: url(Images/bg2.jpg);
+        background-position: center;
+        background-size: cover;
+        image-rendering: optimizeQuality;
+        background-repeat: no-repeat;
+        position: absolute;
+       height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.3;
+      }
+
+      .clients{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        line-height: 0;
+      }
+      
+      .clients-item{
+        padding: 38px;
+      }
+
+      .clients img {
+        height: 50px;
+      }
+
+      /*Contact Section */
+
+      .Contact{
+        position: relative;
+      }
+
+      .Contact::before{
+        content: "";
+        background-image: url(Images/food-366875_1280.jpg);
+        image-rendering: optimizeQuality;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 100%;
+        height: 98%;
+        margin-top: 57px;
+        z-index: -1;
+        opacity: 0.4;
+      }
+      
+      .contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-box input{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      .contact-box input:hover{
+        box-shadow: 10px 10px 30px 8px rgb(75, 75, 75);
+      }
+
+      .contact-box form{
+        width: 40%;
+      }
+
+      .contact-box label{
+        font-size: 1.3rem;
+        font-family: "Bree Serif", serif;
+      }
+      
+      .message{
+        height: 140px;
+      }
+      
+      .Contact .h-primary{
+        padding-top: 60px;
+      }
+
+      /*Footer*/
+      footer{
+        background-color: #191f36;
+        color: white;
+        padding: 9px 20px;
+        margin-top: 30px;
+        text-align: center;
+      }
